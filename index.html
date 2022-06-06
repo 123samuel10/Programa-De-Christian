@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <title>Almacen la Rebaja</title>
+</head>
+<body>
+<div class="div-titulo-principal">
+    <h1 class="titulo-principal">Almacen la Rebaja</h1>
+</div>
+    
+
+<div class="div-main">
+    <main>
+        <form action="#" class="form">
+
+            <div>
+                <h1>Categoria</h1>
+                <p>
+                    <input type="text" placeholder="Ingrese Categoria" id="idCategoria" class="inputs">
+                </p>
+            </div>
+            <div>
+                <h1>Producto</h1>
+                <p>
+                    <input type="text" placeholder="Ingrese el producto" id="idProducto" class="inputs">
+                </p>
+
+            </div>
+            <div>
+                <h1>Cantidad</h1>
+                <p>
+                    <input type="text" placeholder="Ingrese cantidad " id="idCantidad" class="inputs">
+                </p>
+
+
+            </div>
+
+            <div>
+                <h1>Precio</h1>
+                <p>
+                    <input type="text" placeholder="Ingrese Precio " id="idPrecio" class="inputs">
+                </p>
+
+            </div>
+            <div>
+                <button type="button" onclick="principio(event)" class="Botones-empujar">Listar  al Principio</button>
+                <button type="button" onclick="final(event)" class="Botones-empujar">Listar  al Final</button>
+            </div>
+        </form>
+
+<!-- ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="div-funciones">
+         <div class="f-class">
+            <h3> Cuantos productos hay Por Categoría</h3>
+            <button type="button" onclick="informarCategoria(event)">Enviar</button>
+            <div class="input-vacio-categoria inputs-primero media-quere" id="insertar-Valor-Categoria"> </div>
+         </div>
+         <div class="f-class">
+
+            <h3> Cantidad total productos</h3>
+            <button type="button" onclick="cantidadProductos(event)">Enviar</button>
+            <div> 
+                <input type="text" class="inputs-tranparente media-quere" id="id-cantidadProducto" >
+            </div>
+           
+           
+            
+         </div>
+         <div class="f-class">
+
+            <h3> Valor total de los productos</h3>
+            <button type="button" onclick="valorProductos(event)">Enviar</button>
+            <div>
+                <input type="text" class="inputs-tranparente media-quere" id="ID-valorProductos">
+            </div>
+           
+
+                
+         </div>
+         <div class="f-class">
+            <h3> Disminuir Existencias de un producto</h3>
+            <input type="text" placeholder="ingrese el nombre del producto" class="inputs-tranparente" id="nombre-para-disminuir">
+            <input type="text" placeholder="ingrese cantidad de existencias a eliminar"  class="inputs-tranparente" id="existencias-disminuir">
+            <button type="button" onclick="disminuirExistencias(event)">Enviar</button>
+            <input type="text"  class="inputs-mostrar-javascript media-quere" id="input-restar-existencias">
+            
+         </div>
+
+         <div class="f-class">
+            <h3> Aumentar Existencias de un producto</h3>
+            
+            <input type="text" placeholder="ingrese el nombre del producto" class="inputs-tranparente " id="nombre-para-aumentar">
+            <input type="text" placeholder="ingrese cantidad de existencias para aumentar"  class="inputs-tranparente" id="existencias-aumentar">
+            <button type="button" onclick="AumentarExistencias(event)">Enviar</button>
+            <input type="text" class="inputs-mostrar-javascript media-quere" id="input-sumar-existencias">
+         </div>
+
+         <div class="f-class">
+
+            <h3> Buscar un producto por Nombre</h3>
+            
+            <input type="text" placeholder="ingresa-nombre" class="inputs-tranparente" id="nombre-buscar">
+            <button type="button" onclick="buscarNombre(event)">Enviar</button>
+            <input type="text"  class="inputs-mostrar-javascript media-quere" id="input-buscar-nombre">
+         </div>
+
+         <div class="f-class">
+            <h3> Eliminar un producto</h3>
+            <input type="text" placeholder="Digite el producto" class="inputs-tranparente" id="eliminarProducto">
+            <button type="button" onclick="eliminarProducto(event)">Enviar</button>
+            <input type="text"  class="inputs-mostrar-javascript media-quere" id="input-eliminar">
+
+         </div>
+
+         <div class="f-class">
+            <h3> Listar en Orden Alfabetico los productos</h3>
+            <button type="button" onclick="alfabeto(event)">Enviar</button>
+            <input type="text" class="input-alfabeto-css media-quere" id="input-alfabeto">
+
+         </div>
+         <div class="f-class">
+            <h3>Productos Con sus Ganancias</h3>
+            <button type="button" onclick="producto_ganancia(event)">Enviar</button>
+            <input type="text" class="reseteat-css media-quere" id="input_producto_ganancia">
+         </div>
+
+         <div class="f-class">
+            <h3>Precio mas bajo en la tienda</h3>
+            <button type="button" onclick="mayor_menor(event)">Enviar</button>
+            <div type="text" class="mayor-menor-css media-quere" id="input-mayor-menor"></div>
+         </div>
+
+         <div class="f-class">
+            <h3>Promedio de Precios</h3>
+            <button type="button" onclick="promedio(event)">Enviar</button>
+            <div type="text" class="mayor-menor-css media-quere" id="div-promedio"></div>
+         </div>
+
+         <div class="f-class">
+            <button type="button" onclick="cargarLocal(event)" class="boton-local-Storage-css">Guardar Cambios</button>
+         </div>
+      </div>
+    </main>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

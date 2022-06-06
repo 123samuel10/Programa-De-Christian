@@ -1,0 +1,198 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+h1{
+    font-family: tahoma, arial, helvetica;
+    font-size: 30px;
+    font-weight: 50;
+}
+h3{
+    font-family: tahoma, arial, helvetica;
+    font-weight: 50;
+}
+
+.div-titulo-principal{
+    text-align: center;
+    background-image: linear-gradient(to top , rgb(39, 201, 25) ,rgb(14, 165, 192));
+    overflow: hidden;
+    color: white;
+    text-shadow: 5px 5px 5px rgb(79, 74, 74);
+    width: 100%;
+}
+
+.titulo-principal{
+    font-size: 2rem;
+    font-family: Tahoma,sans-Serif;
+}
+
+.div-main{
+    text-align: center;
+    overflow: hidden ;
+    padding: 40px;
+    display:flex;
+    justify-content:center;
+}
+
+.form{
+    background-image: linear-gradient( to right , rgba(38, 209, 22, 0.849) , rgb(24, 194, 180) );
+    max-width: 300px;
+    position: relative;
+    left: 50px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.div-form input{
+    background : none;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom: black , 5px , solid;
+    width: 200px;
+    height: 35px;
+    display: flex;
+}
+
+.Botones-empujar{
+    display: inline;
+    margin-top:10px;
+}
+
+
+.div-funciones{
+    background-image: linear-gradient(to left , rgba(38, 209, 209) , rgba(38, 209, 22, 0.849) );
+    max-width: max-content;
+    position: relative;
+    margin-top:40px;
+    border-radius: 10px;
+}
+
+.inputs-primero{
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    left: 15px;
+    width: 380px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+
+.inputs-mostrar-javascript{
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    left: 15px;
+    width: 380px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+
+
+.input-alfabeto-css{
+    display:block;
+    background-color: aliceblue;
+    width: 380px;
+    height:30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    position: relative;
+    left: 15px;
+    border:none;
+}
+
+.inputs-tranparente{
+    background-color:transparent;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px , black , solid;
+}
+
+.boton-local-Storage-css{
+    margin-top: 20px;
+}
+
+.reseteat-css{
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    left: 15px;
+    width: 380px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+
+.mayor-menor-css{
+    display: block;
+    margin-top: 30px;
+    position: relative;
+    left: 15px;
+    width: 380px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    background-color: aliceblue;
+}
+
+
+@media screen and (max-width:675px) {
+    .div-titulo-principal{
+        width: 100%;
+    }
+    .div-main{
+        width: 100%;
+    }
+    .form{
+        width: 50%;
+        font-size:3vw;
+        padding: 30px;
+    }
+    .div-funciones{
+        width: 70%;
+        padding: 30px;
+    }
+
+    .media-quere{
+        width: 95%;
+    }
+   
+}
+
+@media screen and (max-width:380px){
+    .div-titulo-principal{
+        width: 100%;
+    }
+    .div-main{
+        width: 100%;
+    }
+    .form{
+        font-size:3vw;
+        padding: 30px;
+        position: relative;
+        left: 40px;
+    }
+    .div-funciones{
+        width: 70%;
+        padding: 30px;
+        position: relative;
+        left: 0px;
+    }
+
+    .media-quere{
+        width: 95%;
+    }
+
+}
+.input-vacio-categoria{
+    height: auto;
+}
